@@ -38,14 +38,7 @@
 			The dateplot is particularly great as it does not feel too cluttered eventhough many aspects can be investigated. Below, is the
 			dateplot for the crime data. 
 			<img src="{{site.baseurl}}/assets/images/dateplot.png" alt="Plot">
-			
-	<embed
-       type="text/html"
-       src="{{site.baseurl}}/assets/images/custom_filename.html"
-       width="1000"
-       height="600"
-       >
-</embed> 
+				
 This is a multi figure plot with a table figure for every year in the period. On the global y-axis is the years. On the
  individual x-axis the months are labeled. A box is a date and the more dark green the box is, the more crime has happened
  that day. The lighter a box is in color, the lesser amount of crime has happened. 
@@ -54,7 +47,10 @@ This is a multi figure plot with a table figure for every year in the period. On
  expand to the entire year. One could speculate that the presidential elections in 2012 and 2016 could have had a role to play.
  But with this data, that is speculative at best.
  
- Now that we see an increase in crime overall as time goes by, it could be interesting to see whether all of the crime happens 
+ </p> 
+        </div>
+        <div class="column">
+            <p>Now that we see an increase in crime overall as time goes by, it could be interesting to see whether all of the crime happens 
  in one location or in multiple scattered over San Francisco. Two methods of investigating this comes to mind. A division of
  the city into its districts and the counting the crimes within those districts. Or a more general heatmap over the entire city.
  Both visualizations are great. Let us have a look at the more general heat map approach. 
@@ -67,10 +63,41 @@ natural that we investigate the months rather than whole years in this next plot
        width="1000"
        height="600"
        >
-</embed> </p> 
-        </div>
-        <div class="column">
-            <p>Data..</p>
+</embed> 
+This plot is a small video representation of the graphical distribution of larceny crimes in San Francisco. The video has
+a frame for each month over the course of 15 years (2003 - 2017). It quickly becomes apparent that crimes are more frequent in the northern urban areas
+of the city. This makes sense as there are more people on close proximity to oneanother. More people naturally creates the
+potential of more crime. It is also clear (if you go from an early frame to a late one) that the map gets more and more 
+red due to an increase in crime rate. What is more interesting in this visualization is that by far, the most increase in crime
+happens where there has always been the most crime. That is, in the north eastern urban areas. It should be noted here that 
+San Fransisco has its most housing growth in already urban areas. And most of its parks and nature remains parks and nature. 
+So once again, does more people just equal more crime? 
+
+Now would be a good time to investigate if there is a notable increase in residents in San Fransisco, now that we hypothesize 
+that the increase in crime is due to the increase in population. But for this, some additional data is required. Specifically
+a dataset containing the population of San Fransisco from at least 2003 to 2017 is needed. Luckily such a dataset is available
+here: https://www.macrotrends.net/cities/23130/san-francisco/population . With this dataset, an interactable plot can be
+constructed where it is possible to investigate the increase in crime and the tendensies of population growth side by side.
+  <embed
+       type="text/html"
+       src="{{site.baseurl}}/assets/images/custom_filename.html"
+       width="1000"
+       height="600"
+       >
+</embed> 
+On the shared x-axis, the years in the period are labeled. On the shared y-axis, the distribution is labeled. Note that the
+population is plotted in hundres, so when a population bar reaches 30.000 on the y-axis, there is in fact 3.000.000 people 
+registered in San Francisco at that time. A log y-axis would be great in this plot, but due to difficulties a scaling of the population
+was used instead. What this plot reveals is that the population growth is very slim. SF only has around a 1% increase in its population
+each year. The amount of crime though, sees a drastic increase in the year 2012. Either of the two bar plots can be hidden for
+a more direct investigation of the individual categories by clicking their boxes next to their legends. 
+
+Ironically San Francisco was named Americas best city in 2012 by Bloomberg https://www.bloomberg.com/news/articles/2012-09-26/san-francisco-is-americas-best-city-in-2012#xj4y7vzkg , 
+but this year also seem to be a turning point for the worse in San Franciscos theft history. Or does it? It is hard to answer.
+Through this papers investigation, it is clear that the population growth is NOT solely responsible for the increase in theft.
+Other aspects may be at play. Two clear contenders could be the advancement in police peformance, or just that more crimes take place 
+in recent years. The problem is complex and human generated data based on human behavior is a hard nut to crack. One thing is
+for certain though. Larceny crimes in San Fransico is rapidly increasing and show no sign of slowing down.</p>
         </div>
     </div>
  </body>
