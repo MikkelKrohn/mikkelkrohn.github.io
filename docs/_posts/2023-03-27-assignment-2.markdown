@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Assignment 2"
+title:  "Test"
 date:   2023-03-27 14:42:10 +0100
 categories: jekyll update
 ---
