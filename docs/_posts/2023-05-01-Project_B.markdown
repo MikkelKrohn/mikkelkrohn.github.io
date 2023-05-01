@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: projectB
 title:  "Project Assignment 2"
 date:   2023-05-01 14:42:10 +0100
 categories: jekyll update
