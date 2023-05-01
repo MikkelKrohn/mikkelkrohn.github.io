@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Static HTML file</title>
+<style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.0.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="6d8925ad-15de-44a0-8f76-db028a150d15" data-root-id="p8342" style="display: contents;"></div>
+  
+    <script type="application/json" id="p8873">
+      {"19eeae38-4bbd-476f-a71d-94ba02e43a81":{"version":"3.0.3","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p8342","attributes":{"width":1600,"x_range":{"type":"object","name":"FactorRange","id":"p8341","attributes":{"factors":["2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p8344"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p8355"},"y_scale":{"type":"object","name":"LinearScale","id":"p8357"},"title":{"type":"object","name":"Title","id":"p8345","attributes":{"text":"Thefts and population in hundreds from 2003 - 2017"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p8396","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p8387","attributes":{"selected":{"type":"object","name":"Selection","id":"p8389","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p8388"},"data":{"type":"map","entries":[["Years",{"type":"ndarray","array":["2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017"],"shape":[15],"dtype":"object","order":"little"}],["Population",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAACz30AAAAAAgL/fQAAAAAAAzN9AAAAAAIDY30AAAAAAgOffQAAAAAAA9N9AAAAAAEAA4EAAAAAAwAfgQAAAAAAADuBAAAAAAEAU4EAAAAAAgBrgQAAAAAAAIuBAAAAAAEAo4EAAAAAAwC/gQAAAAAAANuBA"},"shape":[15],"dtype":"float64","order":"little"}],["Thefts",{"type":"ndarray","array":{"type":"bytes","data":"SWYAABFfAACKYgAAW2oAAP9jAAAkZAAAS2MAAJReAAAdZAAAKHgAAHiNAADkkwAA/KMAAK2dAABiugAA"},"shape":[15],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p8397","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p8398"}}},"glyph":{"type":"object","name":"VBar","id":"p8393","attributes":{"x":{"type":"field","field":"Years"},"top":{"type":"field","field":"Population"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"value","value":"#1b9e77"},"hatch_color":{"type":"value","value":"#1b9e77"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p8394","attributes":{"x":{"type":"field","field":"Years"},"top":{"type":"field","field":"Population"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1b9e77"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"#1b9e77"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p8395","attributes":{"x":{"type":"field","field":"Years"},"top":{"type":"field","field":"Population"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1b9e77"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"#1b9e77"},"hatch_alpha":{"type":"value","value":0.2}}},"muted":true}},{"type":"object","name":"GlyphRenderer","id":"p8408","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p8399","attributes":{"selected":{"type":"object","name":"Selection","id":"p8401","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p8400"},"data":{"type":"map","entries":[["Years",{"type":"ndarray","array":["2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017"],"shape":[15],"dtype":"object","order":"little"}],["Population",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAACz30AAAAAAgL/fQAAAAAAAzN9AAAAAAIDY30AAAAAAgOffQAAAAAAA9N9AAAAAAEAA4EAAAAAAwAfgQAAAAAAADuBAAAAAAEAU4EAAAAAAgBrgQAAAAAAAIuBAAAAAAEAo4EAAAAAAwC/gQAAAAAAANuBA"},"shape":[15],"dtype":"float64","order":"little"}],["Thefts",{"type":"ndarray","array":{"type":"bytes","data":"SWYAABFfAACKYgAAW2oAAP9jAAAkZAAAS2MAAJReAAAdZAAAKHgAAHiNAADkkwAA/KMAAK2dAABiugAA"},"shape":[15],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p8409","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p8410"}}},"glyph":{"type":"object","name":"VBar","id":"p8405","attributes":{"x":{"type":"field","field":"Years"},"top":{"type":"field","field":"Thefts"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"value","value":"#d95f02"},"hatch_color":{"type":"value","value":"#d95f02"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p8406","attributes":{"x":{"type":"field","field":"Years"},"top":{"type":"field","field":"Thefts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#d95f02"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"#d95f02"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p8407","attributes":{"x":{"type":"field","field":"Years"},"top":{"type":"field","field":"Thefts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#d95f02"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"#d95f02"},"hatch_alpha":{"type":"value","value":0.2}}},"muted":true}}],"toolbar":{"type":"object","name":"Toolbar","id":"p8350","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p8372"},{"type":"object","name":"WheelZoomTool","id":"p8373"},{"type":"object","name":"BoxZoomTool","id":"p8374","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p8375","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p8376"},{"type":"object","name":"ResetTool","id":"p8377"},{"type":"object","name":"HelpTool","id":"p8378"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p8365","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p8368","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p8367"},"axis_label":"Distribution","major_label_policy":{"type":"object","name":"AllLabels","id":"p8366"}}}],"right":[{"type":"object","name":"Legend","id":"p8411","attributes":{"location":[10,20],"click_policy":"hide","items":[{"type":"object","name":"LegendItem","id":"p8412","attributes":{"label":{"type":"value","value":"Population"},"renderers":[{"id":"p8396"}]}},{"type":"object","name":"LegendItem","id":"p8413","attributes":{"label":{"type":"value","value":"Thefts"},"renderers":[{"id":"p8408"}]}}]}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p8359","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p8362"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p8361"},"axis_label":"Year","major_label_policy":{"type":"object","name":"AllLabels","id":"p8360"}}}],"center":[{"type":"object","name":"Grid","id":"p8364","attributes":{"axis":{"id":"p8359"}}},{"type":"object","name":"Grid","id":"p8371","attributes":{"dimension":1,"axis":{"id":"p8365"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p8873').textContent;
+              const render_items = [{"docid":"19eeae38-4bbd-476f-a71d-94ba02e43a81","roots":{"p8342":"6d8925ad-15de-44a0-8f76-db028a150d15"},"root_ids":["p8342"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
