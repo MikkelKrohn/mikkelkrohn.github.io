@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project Assignment B"
+title:  "Assignment 2"
 date:   2023-03-27 14:42:10 +0100
 categories: jekyll update
 ---
