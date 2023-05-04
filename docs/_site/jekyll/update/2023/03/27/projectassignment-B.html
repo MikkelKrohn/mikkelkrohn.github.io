@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+      margin: 20px;
+    }
+  
+    h1 {
+      color: green;
+    }
+  
+    img {
+      float: left;
+      margin: 5px;
+    }
+  
+    p {
+      text-align: justify;
+      font-size: 16px;
+    }
+	
+	figure figcaption {
+    border: 1px dotted blue;
+	}
+  </style>
+</head>
+</head>
+<body>
+
+<h1 style="color: #5e9ca0;">Project assignment B</h1>
+<p><em>Unidentified flying objects. A highly controversial topic in the modern world. The term UFO in it self does not suggest anything extra terrestrial. But the very nature of a flying object that we cannot define ourselves opens our minds to speculation. The modern western world attributed certain things to, especially, to the abbreviation UFO. When media uses the word, the recipients immediately think of aliens. The very reason you are interested in this paper, is not because you wish to learn of explainable arial objects, but rather the fact that a seemingly scientific paper discusses the indication of aliens. This paper aims to cater to your skeptical curiosity in regards to the sightings of UFOs. In the next paragraphs, you will be told a story. A data driven story about the UFO sightings, accompanied by interactive data visualizations and research that could explain whether the sightings actually were of extra terrestrial nature or not. It is highly recommended that you as the reader bring an open, but skeptical mind, hungry for exploration.
+</em></p>
+
+
+    <h4>The Dataset</h4>
+    <p>As mentioned in the introductory paragraph, this story is base on data. The dataset is issued by NUFORC (National UFO Reporting Center), an American non profit organization. 
+	It is not important to understand every detail. However, for you to understand the dimensions of the data, here are some core information. 
+	There are registered UFO observations from the year 1906 and up to 2014. Only a few countries are represented in the dataset. 
+	<br>
+	The USA has by far the most observations, Great Britain has a few observations and then the rest is scarcely scattered over the world. Every observation has some attributes to them. 
+	To name a few; Date of observation, time of day, location and description of UFO. The entire dataset has over 80.000 observations of UFOs. 
+	<br>
+	It is also important to understand that the observations are registered by ordinary people who happen to see a UFO, regardless of the person they are. 
+	If you wish to read more of the original data, please refer to this link https://github.com/planetsig/ufo-reports. Let us get an overview of the data. 
+	How is it distributed over time? Below in figure 1, a simple histogram is shown with the distribution of observations over the years. 
+	<br>
+	<br>
+	You might notice that the earliest year in the plot is 1950, which is a long ways away from 1906, where the first observation is registered. 
+	But from before the year 1950, there is almost no observations registered. So for this plot alone, observations before 1950 has been removed in order to better identify the trend in the distribution. 
+	One may notice that in later years, observations has exploded in numbers. There is no better time than now, to see a UFO according to this distribution. 
+	This may be explainable as the ordinary person may not be able to identify various arial object such a satellites, which has also rapidly increased in numbers as years went by. 
+	Why do you think we see this increase in UFO sightings?
+	<br>
+	<br>
+	</p>
+    <figure>
+    <img src="/assets/images/year_dist.png" alt="Plot">
+	<figcaption>
+    <strong>Figure 1: </strong> <em>A plot showing the number of UFO observations per year from 1950 to 2014. 
+			On the x axis, the years are found and on the y axis the amount of sightings is found. 
+			Main takeaway from this plot is that the number of observations are rapidly increasing as the years go by.</em></figcaption>
+	</figure> 
+	<p>
+		<h4>Location is important</h4>
+		Next, the location of the sightings may prove to be interesting. <br>
+		As the dataset is from NUFORC, which is located in America, 
+		it becomes likely that most of the observations are located in America. And they most definitely are. 
+			
+		Roughly 75% of the observations are located within the borders of the United States. But there may be more factors at play. 
+		America has a very interesting culture as far as aliens go. When searching up the most popular movies tagged with 'ufo' on imdb, 
+		at least the first 10 movies/shows are American productions set in America. When was the last time you saw a movie/show about aliens or UFO's, that was not set in America? <br><br>
+ 
+		In order to keep the data exploration easily navigable we make a similar choice as Hollywood does when they make movies about UFOs or aliens.  <br>
+		We focus on America and exclude the rest of the world. But America is still a very large place with surprisingly different 'cultures'. <br>
+		America has 52 states, with well defined borders and different, laws, education, population, accents and even culture. For non-Americans, 
+		each state could be viewed as an individual country. For the purpose of tangibility, we will investigate the states independently. 
+		<br>
+		<br>
+		California tops the list of most UFO's observed, with over double the UFO's seen by the next state down, which is Washington state. <br>
+		Several American news outlets agree that California is the worlds hotspot for UFO sightings. <br>
+		And it is certainly the place in the world where most UFO's are observed within narrow, well defined borders. <br>
+		Feel free to investigate the interactive map of the USA below. The dmwmarker green the state is colored, 
+		the more sightings has been registered within the borders of the state over the course of the years. <br>
+		If you are not familiar with the state locations, pan your mouse over the states and the state abbreviation and amount of sightings will appear. 
+		<br>
+		<br>
+		<br>
+		<br>
+	</p>
+	<figure>
+	<embed
+	   type="text/html"
+       src="/assets/images/America_map.html"
+       width="1000"
+       height="600"
+	   align="right"
+       > 
+	</embed>
+	<figcaption
+	align="bottom"
+	><strong>Figure 2: </strong> <em>An interactive map over America, divided into states. On the right side of the plot, a colorbar is shown. 
+			The colorbar explains that a darker colored state, means there are more sightings within that state. 
+			Main takeaway from this plot is to notice that California is by far the leader in sightings. 
+			Washington is the next state down, then Florida, Texas and so on.</em></figcaption>
+	<figure>
+	
+	<p>
+		<h4>Might aliens prefer the western heat?</h4>
+		Now this is interesting. California is disproportionately ahead of any other state, so much that it is subject for further investigation. 
+		California has a few big cities, most notably, Los Angeles and San Fransisco. It is also in these cities that most of the sightings are recorded. <br>
+		You may think that the high number of sightings is due to the culture surrounding California and the named cities. 
+		What do you think of when California is named to you? Words like vacation, beach, party, drinking and drugs may come to mind. 
+		Especially the topic of drugs is an interesting thing to factor in when talking about UFO sightings. 
+		Maybe these overwhelming sighting numbers are influenced by heavy drug use in the state. <br> <br>
+		Nowadays, California has been recorded to be far down on the list of the states with the biggest drug problems. 
+		But the sightings we investigated are from the early 1990s to early 2000s, and the time tells a different story about California. <br>
+		In 2009, Forbes released a list over the cities with the worst drug problems. 
+		On the list were San Fransisco (California), Baltimore (Maryland) and New Orleans (Louisiana). 
+		Now that we see San Fransisco on the list, it is tempting to write of the amount of sightings as a product of drug use. 
+		This very thing is speculated in various media with a stance against the sightings being legitimate. 
+		But what most media investigated in this paper fails to take into account, is the population of the states. 
+		California may not be so special after all. <br> <br>
+		Rather than dissect the validity of individual sightings as the reasoning behind the high amount of UFO sightings in California, 
+		the reasoning may be as simple as; more people = more reports. So let us take a look at how many UFO's are seen by every million people of a state. 
+		In other words, if 1 million people lived in each state, how many UFO's would they observe according to the data.
+		Interestingly enough, California is also the state with the most people without a high school diploma, and only beat by Puerto Rico with the lowest percent of people without a high school diploma. 
+		<a href="https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_educational_attainment">[source]</a>
+		<br>
+		Below, a map similar to the one presented above is shown. The only difference being that the map below takes into account the population of the states.
+	</p>
+	<figure
+	float="left">
+	<embed
+       type="text/html"
+       src="/assets/images/America_map_over_pop.html"
+       width="1000"
+       height="600"
+		align="left"
+       > 
+	   <figcaption><strong>Figure 3: </strong> <em>An interactive map over America, divided into states. On the right side of the plot, a colorbar is shown. 
+			The colorbar explains that a darker colored state, means there are more sightings within that state per million people. 
+			Main takeaway from this plot is to notice that Washington is the leader in sightings. And now California is way down the list. 
+			As Washington is the state with most sightings per people and the state with the second most sightings, let us do something different than the mainstream media. 
+			Our focus now shifts from California to Washington.</em></figcaption>
+	 </figure>
+	 
+	 <p>
+	 <h3>Should we look further north?</h3>
+	 Washington has roughly only a fifth of California’s population, but still almost half the sightings of UFOs as California. 
+			So there certainly is some evidence of alien presence here right? By now, the thought should have popped up. <br>
+			'Are individual sightings not invalid if only one person has seen it?' There is an argument to be made both ways. 
+			An extra terrestrial presence may not want to be seen. So even one person observing the UFO may be extremely lucky. 
+			On the other hand, the observer is an unpredictable variable which can be very biased and faulty. </p>
+			
+			<p>
+			With that in mind, it would be interesting to investigate sightings within Washington which all happen on the same day and where the UFO's are described with the same word. 
+			When people register an observation, they are required to give a one word description of the UFO. In figure 4 below, a world map zoomed to Washinton is shown. 
+			It is now your job to interact with the map and investigate the observations. <br>
+			Do you find anything to be odd? Are some of the observations rationally explainable, excluding the presence of aliens?  
+		</p>
+		
+		<figure
+		align="center">
+		<embed
+       type="text/html"
+       src="/assets/images/Washington_UFO.html"
+       width="1200"
+       height="600"
+       >
+		</embed> 
+		<figcaption
+		text-align="top"><strong>Figure 4: </strong> <em>A World map zoomed to the location of Washington. Scattered over the map are UFO icons with an accompanying color. 
+		The presence of a colored icon, means that at least three observations exist of that color. 
+		In other words, an observation is only plotted if there are at least two more similar observations. 
+		Each UFO is an observation of a UFO and two UFO's with the same color means that the two observations were made the same day and of a UFO with the same one word description. 
+		The UFO icons are clickable. When clicked a text box appears with; date and time of observation, one word description of UFO and sentence describing the encounter. 
+		The map is also zoomable, but only in Washington are observations plotted.  </em></figcaption>
+		</figure>
+		
+		<p>
+		<h3>Coincidence or not?</h3>
+		What conclusions did you make from the map above? <br>
+		The yellow, white and grey marked observations all happen on the same day of the year. 
+		Namely, the 4th of July. In America, they celebrate this day as independence day. 
+		The day the Americans gained independence from the British empire. 
+		This also means that there are fireworks all over the place in the United states. 
+		This could be a major factor in validating the observations. 
+		The lights that people describe seeing as UFO's could unbeknownst to them, merely be fireworks. 
+		<br>
+		<br>
+		Does this invalidate all the observations in America on the 4th of July? <br>
+		Or is it known to Alien presence that they are harder to be seen on that day, and then wait for that day to show themselves? 
+		What about the other observations in figure 4? Are they as easily explainable? 
+		<br>
+		<br>
+		Now that we have a specific day in question, let us investigate the timing of the observations. 
+		We have already investigated the location of the observations. 
+		The data already established that most of the observations took place after 1950, and that observations per year is only increasing. 
+		But are there then a noticeable difference in the time of year, month, week or day? <br>
+		Furthermore, we do this for the observations in the entire world. 
+		Bellow, a multipanel plot is shown. Each panel investigating a different time dimension in which UFO's are most often observed. 
+		Do you see any patterns in the time dimensions of the observations? 
+		<br>
+		<br>
+		</p>
+		
+		<figure>
+		<img src="/assets/images/Time_dimensions.png" alt="Plot">
+		<figcaption
+		text-align="top"><strong>Figure 5: </strong> <em>A four panel plot all of a different time dimension. 
+		All panels are of UFO sightings in the entire year range of the dataset, from 1906 to 2014. 
+		The y axis for all the plots is of the same data, but with different axis ranges. 
+		<ul>
+		<li>Panel 1: UFO sightings per Month. Main takeaway being July in the lead with the rest of the summer months closely behind. </li>
+		<li>Panel 2: UFO sightings per weekday. Main takeaway being Saturday has the most sightings with the rest of the weekend days closely behind. </li>
+		<li>Panel 3: UFO sightings per day of the month. Main takeaway being the 1st and 15th having enormous surges in sightings with the 4th, 10th, 20th as next in line. </li>
+		<li>Panel 4: UFO sightings per daily hour. Main takeaway being the evening hours having significantly more observations than the rest of the 24 hour cycle.</li> </ul> </em></figcaption>
+		</figure>
+		
+		<p>
+		At first glance it may seem like aliens are visiting earth on specific times of year, month, week and day. 
+		However, there may be an explanation for everything. <br>
+		<h3>Mmmm summer!</h3>
+		July and the summer months being the most populated time of year, may coincide with people being out and about more in the summer months, 
+		and not to mention the 4th of July again. Also the weekend having generally more observations may be a result of the same thing. <br>
+		Now for the day of the month (panel 3). This seems more like a registration of observation error. 
+		When people register an encounter days, months or years after they happened, all the details may not be as accurate as preferred. <br>
+		Therefor registrations with dates such as "start march" or "middle of December" are prone to happen. 
+		As for panel 4, time of day, this could be easily explained. Hours reserved for a day job and hour reserved for sleep does not have as many observations as the evening hours do. 
+		This means that people are able to observe UFOs because they are not stuck inside at work, nor are they sleeping. 
+		<br>
+		<br>
+		Whether these time dynamics mean that more faulty observations are registered in the hotspots of the dimensions, 
+		or that we are missing out on seeing UFOs in the late month winter Monday nights, is up to debate.<br> 
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		
+		<h3>At least we know one thing..</h3>
+		But one thing is for certain. There are way more observations at specific times. The fact of the matter is. 
+		The statement "Aliens have visited earth in the past" Is not a disprovable statement. And neither is "Aliens will visit earth in the future". 
+		Thus, the presence of alien life forms at earth is in fact not disprovable.   
+		<br>
+	
+		So when can you see a UFO? It just so happens that there is a perfect UFO date coming up. 
+		Saturday July 15th 2023. This day checks all of the boxes. This may be the best excuse for a summer vacation in America. 
+		Just remember to step outside in the evening and gaze at the stars on that special day. 
+		</p>
+		
+</body>
+</html>
