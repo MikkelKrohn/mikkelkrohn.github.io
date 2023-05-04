@@ -1,4 +1,4 @@
-<h1> Assignment 2 <h1>
+<h1> Project assignment B <h1>
 <hr>
 <html>
  <head>
@@ -20,84 +20,186 @@
     </style>
  </head>
  <body>
- Crime has always been a promenent topic of concern in the modern world. From petty theft to horrible acts of violence, 
- the range of crimes is vast. However, the categories of crime has been somewhat static over the course of time, with only a 
- few new types of crimes appearing. But what one may could be subject to change when talking about crime over time, is the amount
- of crimes committed. Do we hear more and more about crime because more crimes are comitted? Or are we merely more informed about
- the crimes which are comitted? 
- San Francisco has for a long time been a crime hotspot, not only in the United States, but in the world. Even people in
- Europe are hearing about the crimes of San Francisco. In particular, crimes such as theft are frequently discussed. In this 
- paper, the evolution of larceny crimes in San Francisco over the timespan of 2003 - 2017 will be explored. 
+Unidentified flying objects. A highly controversial topic in the modern world. 
+The term UFO in it self does not suggest anything extra terrestrial. 
+But the very nature of a flying object that we cannot define ourselves opens our minds to speculation. 
+The modern western world attributed certain things to, especially, to the abbreviation UFO. 
+When media uses the word, the recipients immediately think of aliens. 
+The very reason you are interested in this paper, is not because you wish to learn of explainable arial objects, 
+but rather the fact that a seemingly scientific paper discusses the indication of aliens. 
+
+This paper aims to cater to your skeptical curiosity in regards to the sightings of UFOs. 
+In the next paragraphs, you will be told a story. 
+A data driven story about the UFO sightings, 
+accompanied by interactive data visualizations and research that could explain whether the sightings actually were of extra terrestrial nature or not. 
+It is highly recommended that you as the reader bring an open, but skeptical mind, hungry for exploration. 
   
     <div class="row">
         <div class="column">
-            <p>Firstly, let us investigate if there is an increase or decrease in larceny crimes from 2003 to 2017. In order 
-			to do this, a couple of visualizations come to mind. A simple bar plot with the years on the x-axis and the amount of
-			crimes on the y-axis would do the trick. But then a lot of information could be lost in the binning of data. Instead, a 
-			date plot could be usefull. This way, it is possible to identify patterns on weekdays, weeks, months and years all in one.
-			The dateplot is particularly great as it does not feel too cluttered eventhough many aspects can be investigated. Below, is the
-			dateplot for the crime data. 
-			<img src="{{site.baseurl}}/assets/images/dateplot.png" alt="Plot">
+            <p>As mentioned in the introductory paragraph, this story is base on data. 
+			The dataset is issued by NUFORC (National UFO Reporting Center), an American non profit organization. 
+			It is not important to understand every detail. However, for you to understand the dimensions of the data, 
+			here are some core information. There are registered UFO observations from the year 1906 and up to 2014. 
+			Only a few countries are represented in the dataset. The USA has by far the most observations, 
+			Great Britain has a few observations and then the rest is scarcely scattered over the world. 
+			Every observation has some attributes to them. To name a few; Date of observation, time of day, 
+			location and description of UFO. The entire dataset has over 80.000 observations of UFOs. 
+			It is also important to understand that the observations are registered by ordinary people who happen to see a UFO, 
+			regardless of the person they are. If you wish to read more of the original data, please refer to this link https://github.com/planetsig/ufo-reports.
+        
+			Let us get an overview of the data. How is it distributed over time? 
+			Below in figure 1, a simple histogram is shown with the distribution of observations over the years. 
+			You might notice that the earliest year in the plot is 1950, which is a long ways away from 1906, where the first observation is registered. 
+			But from before the year 1950, there is almost no observations registered. So for this plot alone, 
+			observations before 1950 has been removed in order to better identify the trend in the distribution. 
+			One may notice that in later years, observations has exploded in numbers. There is no better time than now, 
+			to see a UFO according to this distribution. This may be explainable as the ordinary person may not be able to identify various arial object such a satellites, 
+			which has also rapidly increased in numbers as years went by. Why do you think we see this increase in UFO sightings?
+
+			<img src="{{site.baseurl}}/assets/images/year_dist.png" alt="Plot">
+			Figure 1: A plot showing the number of UFO observations per year from 1950 to 2014. 
+			On the x axis, the years are found and on the y axis the amount of sightings is found. 
+			Main takeaway from this plot is that the number of observations are rapidly increasing as the years go by.
 				
-This is a multi figure plot with a table figure for every year in the period. On the global y-axis is the years. On the
- individual x-axis the months are labeled. A box is a date and the more dark green the box is, the more crime has happened
- that day. The lighter a box is in color, the lesser amount of crime has happened. 
- Instantly, glancing over the figure there is a sense of increasing crime as time goes by. But it happens rather interestingly.
- Somewhere around 2012-2014, the summer months become more littered with crime. And around 2015, the increase in crime seems to
- expand to the entire year. One could speculate that the presidential elections in 2012 and 2016 could have had a role to play.
- But with this data, that is speculative at best.
+			Next, the location of the sightings may prove to be interesting. 
+			As the dataset is from NUFORC, which is located in America, 
+			it becomes likely that most of the observations are located in America. And they most definitely are. 
+			Roughly 75% of the observations are located within the borders of the United States. But there may be more factors at play. 
+			America has a very interesting culture as far as aliens go. When searching up the most popular movies tagged with 'ufo' on imdb, 
+			at least the first 10 movies/shows are American productions set in America. When was the last time you saw a movie/show about aliens or UFO's, that was not set in America? 
  
+			In order to keep the data exploration easily navigable we make a similar choice as Hollywood does when they make movies about UFOs or aliens. 
+			We focus on America and exclude the rest of the world. But America is still a very large place with surprisingly different 'cultures'. 
+			America has 52 states, with well defined borders and different, laws, education, population, accents and even culture. For non-Americans, 
+			each state could be viewed as an individual country. For the purpose of tangibility, we will investigate the states independently. 
+
+			California tops the list of most UFO's observed, with over double the UFO's seen by the next state down, which is Washington state. 
+			Several American news outlets agree that California is the worlds hotspot for UFO sightings. 
+			And it is certainly the place in the world where most UFO's are observed within narrow, well defined borders. 
+			Feel free to investigate the interactive map of the USA below. The darker green the state is colored, 
+			the more sightings has been registered within the borders of the state over the course of the years. 
+			If you are not familiar with the state locations, pan your mouse over the states and the state abbreviation and amount of sightings will appear. 
+	<embed
+	   type="text/html"
+       src="{{site.baseurl}}/assets/images/America_map.html"
+       width="1000"
+       height="600"
+       > 
+</embed>
+			Figure 2: An interactive map over America, divided into states. On the right side of the plot, a colorbar is shown. 
+			The colorbar explains that a darker colored state, means there are more sightings within that state. 
+			Main takeaway from this plot is to notice that California is by far the leader in sightings. 
+			Washington is the next state down, then Florida, Texas and so on. 
+			
+			Now this is interesting. California is disproportionately ahead of any other state, so much that it is subject for further investigation. 
+			California has a few big cities, most notably, Los Angeles and San Fransisco. It is also in these cities that most of the sightings are recorded. 
+			You may think that the high number of sightings is due to the culture surrounding California and the named cities. 
+			What do you think of when California is named to you? Words like vacation, beach, party, drinking and drugs may come to mind. 
+			Especially the topic of drugs is an interesting thing to factor in when talking about UFO sightings. 
+			Maybe these overwhelming sighting numbers are influenced by heavy drug use in the state. 
+			Nowadays, California has been recorded to be far down on the list of the states with the biggest drug problems. 
+			But the sightings we investigated are from the early 1990s to early 2000s, and the time tells a different story about California. 
+			In 2009, Forbes released a list over the cities with the worst drug problems. 
+			On the list were San Fransisco (California), Baltimore (Maryland) and New Orleans (Louisiana). 
+			Now that we see San Fransisco on the list, it is tempting to write of the amount of sightings as a product of drug use. 
+			This very thing is speculated in various media with a stance against the sightings being legitimate. 
+			But what most media investigated in this paper fails to take into account, is the population of the states. 
+			California may not be so special after all. 
+			Rather than dissect the validity of individual sightings as the reasoning behind the high amount of UFO sightings in California, 
+			the reasoning may be as simple as; more people = more reports. So let us take a look at how many UFO's are seen by every million people of a state. 
+			In other words, if 1 million people lived in each state, how many UFO's would they observe according to the data.
+			Interestingly enough, California is also the state with the most people without a high school diploma, and only beat by Puerto Rico with the lowest percent of people without a high school diploma. 
+			https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_educational_attainment 
+			Below, a map similar to the one presented above is shown. The only difference being that the map below takes into account the population of the states.
+			
+	<embed
+       type="text/html"
+       src="{{site.baseurl}}/assets/images/America_map_over_pop.html"
+       width="1000"
+       height="600"
+       > 
+			Figure 3: An interactive map over America, divided into states. On the right side of the plot, a colorbar is shown. 
+			The colorbar explains that a darker colored state, means there are more sightings within that state per million people. 
+			Main takeaway from this plot is to notice that Washington is the leader in sightings. And now California is way down the list. 
+			As Washington is the state with most sightings per people and the state with the second most sightings, let us do something different than the mainstream media. 
+			Our focus now shifts from California to Washington.
+			
+			
  </p> 
         </div>
         <div class="column">
-            <p>Now that we see an increase in crime overall as time goes by, it could be interesting to see whether all of the crime happens 
- in one location or in multiple scattered over San Francisco. Two methods of investigating this comes to mind. A division of
- the city into its districts and the counting the crimes within those districts. Or a more general heatmap over the entire city.
- Both visualizations are great. Let us have a look at the more general heat map approach. 
- 
- We discovered in the previous visualization that months of a year differs in its amount of larceny crime. It is only 
-natural that we investigate the months rather than whole years in this next plot.   
+            <p>Washington has roughly only a fifth of California’s population, but still almost half the sightings of UFOs as California. 
+			So there certainly is some evidence of alien presence here right? By now, the thought should have popped up. 
+			'Are individual sightings not invalid if only one person has seen it?' There is an argument to be made both ways. 
+			An extra terrestrial presence may not want to be seen. So even one person observing the UFO may be extremely lucky. 
+			On the other hand, the observer is an unpredictable variable which can be very biased and faulty. 
+			With that in mind, it would be interesting to investigate sightings within Washington which all happen on the same day and where the UFO's are described with the same word. 
+			When people register an observation, they are required to give a one word description of the UFO. In figure 4 below, a world map zoomed to Washinton is shown. 
+			It is now your job to interact with the map and investigate the observations. 
+			Do you find anything to be odd? Are some of the observations rationally explainable, excluding the presence of aliens?  
 	<embed
        type="text/html"
-       src="{{site.baseurl}}/assets/images/heat_map.html"
+       src="{{site.baseurl}}/assets/images/Washington_UFO.html.html"
        width="1000"
        height="600"
        >
 </embed> 
-This plot is a small video representation of the graphical distribution of larceny crimes in San Francisco. The video has
-a frame for each month over the course of 15 years (2003 - 2017). It quickly becomes apparent that crimes are more frequent in the northern urban areas
-of the city. This makes sense as there are more people on close proximity to oneanother. More people naturally creates the
-potential of more crime. It is also clear (if you go from an early frame to a late one) that the map gets more and more 
-red due to an increase in crime rate. What is more interesting in this visualization is that by far, the most increase in crime
-happens where there has always been the most crime. That is, in the north eastern urban areas. It should be noted here that 
-San Fransisco has its most housing growth in already urban areas. And most of its parks and nature remains parks and nature. 
-So once again, does more people just equal more crime? 
+		Figure 4: A World map zoomed to the location of Washington. Scattered over the map are UFO icons with an accompanying color. 
+		The presence of a colored icon, means that at least three observations exist of that color. 
+		In other words, an observation is only plotted if there are at least two more similar observations. 
+		Each UFO is an observation of a UFO and two UFO's with the same color means that the two observations were made the same day and of a UFO with the same one word description. 
+		The UFO icons are clickable. When clicked a text box appears with; date and time of observation, one word description of UFO and sentence describing the encounter. 
+		The map is also zoomable, but only in Washington are observations plotted.  	
+		
+		What conclusions did you make from the map above? The yellow, white and grey marked observations all happen on the same day of the year. 
+		Namely, the 4th of July. In America, they celebrate this day as independence day. 
+		The day the Americans gained independence from the British empire. 
+		This also means that there are fireworks all over the place in the United states. 
+		This could be a major factor in validating the observations. 
+		The lights that people describe seeing as UFO's could unbeknownst to them, merely be fireworks. 
+		
+		Does this invalidate all the observations in America on the 4th of July? 
+		Or is it known to Alien presence that they are harder to be seen on that day, and then wait for that day to show themselves? 
+		What about the other observations in figure 4? Are they as easily explainable? 
+		
+		Now that we have a specific day in question, let us investigate the timing of the observations. 
+		We have already investigated the location of the observations. 
+		The data already established that most of the observations took place after 1950, and that observations per year is only increasing. 
+		But are there then a noticeable difference in the time of year, month, week or day? 
+		Furthermore, we do this for the observations in the entire world. 
+		Bellow, a multipanel plot is shown. Each panel investigating a different time dimension in which UFO's are most often observed. 
+		Do you see any patterns in the time dimensions of the observations? 
+		<img src="{{site.baseurl}}/assets/images/Time_dimensions.png" alt="Plot">
+		Figure 5: A four panel plot all of a different time dimension. 
+		All panels are of UFO sightings in the entire year range of the dataset, from 1906 to 2014. 
+		The y axis for all the plots is of the same data, but with different axis ranges. 
+		Panel 1: UFO sightings per Month. Main takeaway being July in the lead with the rest of the summer months closely behind. 
+		Panel 2: UFO sightings per weekday. Main takeaway being Saturday has the most sightings with the rest of the weekend days closely behind. 
+		Panel 3: UFO sightings per day of the month. Main takeaway being the 1st and 15th having enormous surges in sightings with the 4th, 10th, 20th as next in line. 
+		Panel 4: UFO sightings per daily hour. Main takeaway being the evening hours having significantly more observations than the rest of the 24 hour cycle. 
+		
+		At first glance it may seem like aliens are visiting earth on specific times of year, month, week and day. 
+		However, there may be an explanation for everything. 
+		July and the summer months being the most populated time of year, may coincide with people being out and about more in the summer months, 
+		and not to mention the 4th of July again. Also the weekend having generally more observations may be a result of the same thing. 
+		Now for the day of the month (panel 3). This seems more like a registration of observation error. 
+		When people register an encounter days, months or years after they happened, all the details may not be as accurate as preferred. 
+		Therefor registrations with dates such as "start march" or "middle of December" are prone to happen. 
+		As for panel 4, time of day, this could be easily explained. Hours reserved for a day job and hour reserved for sleep does not have as many observations as the evening hours do. 
+		This means that people are able to observe UFOs because they are not stuck inside at work, nor are they sleeping. 
+		
+		Whether these time dynamics mean that more faulty observations are registered in the hotspots of the dimensions, 
+		or that we are missing out on seeing UFOs in the late month winter Monday nights, is up to debate. 
+		But one thing is for certain. There are way more observations at specific times. The fact of the matter is. 
+		The statement "Aliens have visited earth in the past" Is not a disprovable statement. And neither is "Aliens will visit earth in the future". 
+		Thus, the presence of alien life forms at earth is in fact not disprovable.   
+		
+		So when can you see a UFO? It just so happens that there is a perfect UFO date coming up. 
+		Saturday July 15th 2023. This day checks all of the boxes. This may be the best excuse for a summer vacation in America. 
+		Just remember to step outside in the evening and gaze at the stars on that special day. 
+		
+		Happy UFO hunting!
 
-Now would be a good time to investigate if there is a notable increase in residents in San Fransisco, now that we hypothesize 
-that the increase in crime is due to the increase in population. But for this, some additional data is required. Specifically
-a dataset containing the population of San Fransisco from at least 2003 to 2017 is needed. Luckily such a dataset is available
-here: https://www.macrotrends.net/cities/23130/san-francisco/population . With this dataset, an interactable plot can be
-constructed where it is possible to investigate the increase in crime and the tendensies of population growth side by side.
-  <embed
-       type="text/html"
-       src="{{site.baseurl}}/assets/images/custom_filename.html"
-       width="1000"
-       height="600"
-       >
-</embed> 
-On the shared x-axis, the years in the period are labeled. On the shared y-axis, the distribution is labeled. Note that the
-population is plotted in hundres, so when a population bar reaches 30.000 on the y-axis, there is in fact 3.000.000 people 
-registered in San Francisco at that time. A log y-axis would be great in this plot, but due to difficulties a scaling of the population
-was used instead. What this plot reveals is that the population growth is very slim. SF only has around a 1% increase in its population
-each year. The amount of crime though, sees a drastic increase in the year 2012. Either of the two bar plots can be hidden for
-a more direct investigation of the individual categories by clicking their boxes next to their legends. 
-
-Ironically San Francisco was named Americas best city in 2012 by Bloomberg https://www.bloomberg.com/news/articles/2012-09-26/san-francisco-is-americas-best-city-in-2012#xj4y7vzkg , 
-but this year also seem to be a turning point for the worse in San Franciscos theft history. Or does it? It is hard to answer.
-Through this papers investigation, it is clear that the population growth is NOT solely responsible for the increase in theft.
-Other aspects may be at play. Two clear contenders could be the advancement in police peformance, or just that more crimes take place 
-in recent years. The problem is complex and human generated data based on human behavior is a hard nut to crack. One thing is
-for certain though. Larceny crimes in San Fransico is rapidly increasing and show no sign of slowing down.
 </p>
         </div>
     </div>
